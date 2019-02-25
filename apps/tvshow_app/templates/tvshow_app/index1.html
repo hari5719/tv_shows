@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'tvshow_app/css/style1.css' %}"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Create</title>
+</head>
+<body>
+    <div class="contain">
+        <div class="banner">
+            <h1>Add a New Show</h1>
+            <a href="/shows">Go Back</a>
+        </div>
+        {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+        <div class="box1">
+        <form action="/show/create" method="POST">
+            {% csrf_token %}
+            <p>Title</p>
+            <input id ="input1" type="text" name="title">
+        </div>
+
+        <div class="box2">
+            <div class="contain1">
+                    <p>Network</p>
+                    <input type="text" name="network">
+            </div>
+            
+            <div class="contain2">
+                <p>Release Date</p>
+                <input type="date" name="date">
+            </div>
+            
+
+        </div>
+        <br>
+        <p>Description</p>
+        <input  type="text" name="desc" style="height:100px; width:400px;">
+        <br>
+        <br>
+
+        <input id="input2" type="submit" value="Create">
+
+
+    </div>
+
+</body>
+</html>

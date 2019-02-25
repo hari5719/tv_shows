@@ -1,0 +1,36 @@
+
+.contain{
+    margin:0px 100px 0px 100px;
+}
+.banner{
+
+    width:100%;
+}
+
+.banner h1{
+    margin-top:10px;
+    margin-left:20px;
+    width:600px;
+    display: inline-block;
+
+}
+
+.banner a {
+    display: inline-block;
+    margin-left:150px;
+}
+
+.box1{
+    margin-top: 40px;
+}
+
+.box1 p{
+    display: inline;
+}
+.box2{
+    margin-top: 80px;
+
+}
+.box2 p{
+    display: inline;
+}

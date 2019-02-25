@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'tvshow_app/css/style2.css' %}"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Read(one)</title>
+</head>
+<body>
+    <div class="contain">
+
+        <div class="banner">
+            <h1>TV Show {{the_show.id}} </h1>
+            <a href="/shows">Go Back</a>
+        </div>
+        
+        <div class="box1">
+            <p>Title:</p>
+            <p> {{the_show.title}}</p>
+            <br>
+            <br>
+            <p>Network:</p>
+            <p> {{the_show.network}}</p>
+            <br>
+            <br>
+            <p>Release Date:</p>
+            <p> {{the_show.date}}</p>
+            <br>
+            <br>
+            <p>Description:</p>
+            <p> {{the_show.desc}}</p>
+
+        </div>
+
+        <div class="box2">
+           <p>Last Updated:</p>
+           <p> {{the_show.updated_at}}</p>
+            <br>    
+            <br>
+           <a href="/shows/{{the_show.id}}">Edit</a> | <a href="/shows/{{the_show.id}}/destroy">Delete</a>
+        </div>
+            
+        
+       
+       
+
+
+    </div>
+
+</body>
+</html>

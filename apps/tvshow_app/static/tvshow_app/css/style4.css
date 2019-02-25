@@ -1,0 +1,50 @@
+
+.contain{
+    margin:0px 100px 0px 100px;
+}
+.banner{
+
+    width:100%;
+}
+
+.banner h1{
+    margin-top:10px;
+    margin-left:20px;
+    width:600px;
+    display: inline-block;
+
+}
+
+.banner a {
+    display: inline-block;
+    margin-left:150px;
+}
+
+.box1{
+    margin-top: 30px;
+}
+
+.box2{
+    margin-top: 30px;
+}
+#input1{
+    width:400px;
+}
+
+.contain1{
+    display: inline-block;
+
+}
+
+.contain2{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#input2{
+    margin-left:150px;
+}
+
+#a_last{
+    margin-left: 140px;
+}
